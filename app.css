@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "AktivGrotesk-r";
+  src: url("./fonts/AktivGroteskCorp-Regular.woff2") format("woff2"),
+    url("./fonts/AktivGroteskCorp-Regular.woff") format("woff"),
+    url("./fonts/AktivGroteskCorp-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AktivGrotesk-b";
+  src: url("./fonts/AktivGroteskCorp-Bold.woff2") format("woff2"),
+    url("./fonts/AktivGroteskCorp-Bold.woff") format("woff"),
+    url("./fonts/AktivGroteskCorp-Bold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aboutPage-slider {
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+}
+.aboutPage-slider-title {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "AktivGrotesk-b", sans-serif;
+  padding: 0 5px;
+  font-weight: bold;
+}
+.aboutPage-slider-swiper-slide {
+  width: 280px;
+}
+.aboutPage-slider-swiper-slide img {
+  width: 100%;
+  max-width: 300px;
+}
+.aboutPage-slider-swiper-slide-content {
+  font-family: sans-serif;
+  padding: 10px 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "AktivGrotesk-r", sans-serif;
+}
+.aboutPage-slider-swiper-slide-content h1 {
+  font-size: 20px;
+}
+.aboutPage-slider-swiper-slide-content p {
+  font-size: 12px;
+  max-width: 300px;
+  color: #585757;
+}
+
+.aboutPage-slider-swiper-wrapper {
+  min-height: 500px;
+  padding-left: 10px;
+}
+
+.aboutPage-viewAll-products {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutPage-viewAll-products button {
+  width: 250px;
+  height: 40px;
+  background: #11181f;
+  border: none;
+}
+
+.aboutPage-viewAll-products button a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "AktivGrotesk-r", sans-serif;
+  font-size: 12px;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+}
+.aboutPage-slider-swiper-button-prev,
+.aboutPage-slider-swiper-button-next {
+  display: none;
+}
+@media (min-width: 400px) {
+  .aboutPage-slider-swiper-wrapper {
+    min-height: 500px;
+  }
+}
+@media (min-width: 576px) {
+  .aboutPage-slider-swiper-container {
+    max-width: 450px;
+  }
+  .aboutPage-slider-swiper-wrapper {
+    min-height: 500px;
+    padding: 0;
+  }
+  .aboutPage-slider {
+    max-width: 900px;
+    margin: auto;
+  }
+  .aboutPage-slider-swiper-button-prev,
+  .aboutPage-slider-swiper-button-next {
+    display: flex;
+    color: #000;
+    z-index: 100;
+    outline: none;
+  }
+  .aboutPage-slider-swiper-button-prev {
+    left: 10px;
+  }
+  .aboutPage-slider-swiper-button-next {
+    right: 10px;
+  }
+}
+@media (min-width: 700px) {
+  .aboutPage-slider-swiper-container {
+    max-width: 600px;
+  }
+  .aboutPage-slider-swiper-wrapper {
+    min-height: 520px;
+    padding: 0;
+  }
+  .aboutPage-slider {
+    max-width: 900px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutPage-slider-swiper-container {
+    max-width: 890px;
+  }
+  .aboutPage-slider-swiper-wrapper {
+    min-height: 500px;
+  }
+  .aboutPage-slider-swiper-button-prev {
+    left: -40px;
+  }
+  .aboutPage-slider-swiper-button-next {
+    right: -40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .aboutPage-slider-swiper-container {
+    max-width: 1090px;
+  }
+  .aboutPage-slider-swiper-wrapper {
+    min-height: 500px;
+    padding: 0;
+  }
+  .aboutPage-slider {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+@media (min-width: 1300px) {
+  .aboutPage-slider-swiper-button-prev {
+    left: -70px;
+  }
+  .aboutPage-slider-swiper-button-next {
+    right: -70px;
+  }
+}
+
+/* !!!!!!!!!!!!!!!! THIS IS NOT FOR THE CAROUSEL !!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!! THIS IS NOT FOR THE CAROUSEL !!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!! THIS IS NOT FOR THE CAROUSEL !!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!! THIS IS NOT FOR THE CAROUSEL !!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!! THIS IS NOT FOR THE CAROUSEL !!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!! THIS IS NOT FOR THE CAROUSEL !!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!! THIS IS NOT FOR THE CAROUSEL !!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!! THIS IS NOT FOR THE CAROUSEL !!!!!!!!!!!!!!! */
+
+.container-fluid {
+  overflow: hidden;
+  max-width: 2000px;
+  margin: auto;
+}
+.about-application img {
+  width: 100%;
+}
+.about-application-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 40px 10px 40px 10px;
+  font-family: "AktivGrotesk-r", sans-serif;
+}
+.about-application-content h3 {
+  font-family: "AktivGrotesk-b", sans-serif;
+  font-size: 20px;
+}
+.about-application-content p {
+  color: #585757;
+  font-size: 15px;
+}
+
+.seeApplication {
+  width: 300px;
+  display: flex;
+}
+.seeApplication:hover a:nth-child(2) {
+  padding-left: 10px;
+}
+.lastseeApplication {
+  width: 400px;
+}
+.seeApplication a {
+  width: 50%;
+  text-decoration: none;
+  color: #11181f;
+  font-weight: 700;
+  font-family: "AktivGrotesk-r", sans-serif;
+  transition: all 0.2s ease;
+}
+
+@media (min-width: 576px) {
+  .about-application-content {
+    margin: auto;
+    max-width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .about-application-content {
+    margin: 0;
+  }
+  .about-application-content h3 {
+    padding-left: 10px;
+  }
+  .about-application-content p {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+}
